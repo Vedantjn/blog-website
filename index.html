@@ -4,398 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirmohi Blogs</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Grid Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 4rem;
+            display: grid;
+            gap: 1rem;
+            background-color: rgb(71, 65, 65);
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+        }
+        .item{
+            padding: 1rem;
+            border: 3px solid black;
+            background-color: rgb(85, 85, 208);
+            color: white;
+        }
+    </style>
 </head>
-<body class="body_container">
-
-    <div class="container">
-
-        <header class="header_container">
-            <h1 class="header_title"> Nirmohi Blogs</h1>
-            <p class="header_desc">
-                Utilize this space to incorporate a captivating subheading crafted by ChatGPT, adding depth and intrigue to your blog.
-            </p>
-        </header>
-
-        <main class="main_container">
-
-            <!-- card 1 start -->
-            <div class="card_container">
-                <a href="#" class="card_image_container">
-                    <img
-                        src="https://source.unsplash.com/random/600×400?technology"
-                        alt="card 1 image"
-                        class="card_image"
-                        loading="lazy"
-                    />
-                </a>
-
-                <div class="card_title_container">
-                    <a href="#" class="card_title_anchor">
-                        <h2 class="card_title">New Gadgets Released</h2>
-                    </a>
-                    <p class="card_desc">
-                        Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.
-                    </p>
-                </div>
-
-                <div class="card_footer_container">
-
-                    <div class="author_container">
-                        <div class="author_avatar_container">
-                            <img 
-                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
-                                loading="lazy"
-                                class="author_avatar"
-                                alt="avatar 1"
-                            />
-                        </div>
-                        <div class="author_info_container">
-                            <span class="author_name">
-                                John Doe
-                            </span>
-                            <span class="author_date">
-                                Sept 19, 2021
-                            </span>
-                        </div>
-                    </div>
-
-                    <div >
-                        <span class="card_tag_container">Technology</span>
-                    </div>
-                </div>
-            </div>
-            <!-- card 1 ends here -->
-
-            <div class="card_container">
-                <a href="#" class="card_image_container">
-                    <img
-                        src="https://source.unsplash.com/random/600×400?nutrition"
-                        alt="card 1 image"
-                        class="card_image"
-                        loading="lazy"
-                    />
-                </a>
-
-                <div class="card_title_container">
-                    <a href="#" class="card_title_anchor">
-                        <h2 class="card_title">New Gadgets Released</h2>
-                    </a>
-                    <p class="card_desc">
-                        Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.
-                    </p>
-                </div>
-
-                <div class="card_footer_container">
-
-                    <div class="author_container">
-                        <div class="author_avatar_container">
-                            <img 
-                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
-                                loading="lazy"
-                                class="author_avatar"
-                                alt="avatar 1"
-                            />
-                        </div>
-                        <div class="author_info_container">
-                            <span class="author_name">
-                                John Doe
-                            </span>
-                            <span class="author_date">
-                                Sept 19, 2021
-                            </span>
-                        </div>
-                    </div>
-
-                    <div >
-                        <span class="card_tag_container">Technology</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card_container">
-                <a href="#" class="card_image_container">
-                    <img
-                        src="https://source.unsplash.com/random/600×400?travel"
-                        alt="card 1 image"
-                        class="card_image"
-                        loading="lazy"
-                    />
-                </a>
-
-                <div class="card_title_container">
-                    <a href="#" class="card_title_anchor">
-                        <h2 class="card_title">New Gadgets Released</h2>
-                    </a>
-                    <p class="card_desc">
-                        Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.
-                    </p>
-                </div>
-
-                <div class="card_footer_container">
-
-                    <div class="author_container">
-                        <div class="author_avatar_container">
-                            <img 
-                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
-                                loading="lazy"
-                                class="author_avatar"
-                                alt="avatar 1"
-                            />
-                        </div>
-                        <div class="author_info_container">
-                            <span class="author_name">
-                                John Doe
-                            </span>
-                            <span class="author_date">
-                                Sept 19, 2021
-                            </span>
-                        </div>
-                    </div>
-
-                    <div >
-                        <span class="card_tag_container">Technology</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card_container">
-                <a href="#" class="card_image_container">
-                    <img
-                        src="https://source.unsplash.com/random/600×400?productivity"
-                        alt="card 1 image"
-                        class="card_image"
-                        loading="lazy"
-                    />
-                </a>
-
-                <div class="card_title_container">
-                    <a href="#" class="card_title_anchor">
-                        <h2 class="card_title">New Gadgets Released</h2>
-                    </a>
-                    <p class="card_desc">
-                        Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.
-                    </p>
-                </div>
-
-                <div class="card_footer_container">
-
-                    <div class="author_container">
-                        <div class="author_avatar_container">
-                            <img 
-                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
-                                loading="lazy"
-                                class="author_avatar"
-                                alt="avatar 1"
-                            />
-                        </div>
-                        <div class="author_info_container">
-                            <span class="author_name">
-                                John Doe
-                            </span>
-                            <span class="author_date">
-                                Sept 19, 2021
-                            </span>
-                        </div>
-                    </div>
-
-                    <div >
-                        <span class="card_tag_container">Technology</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card_container">
-                <a href="#" class="card_image_container">
-                    <img
-                        src="https://source.unsplash.com/random/600×400?mindfulness"
-                        alt="card 1 image"
-                        class="card_image"
-                        loading="lazy"
-                    />
-                </a>
-
-                <div class="card_title_container">
-                    <a href="#" class="card_title_anchor">
-                        <h2 class="card_title">New Gadgets Released</h2>
-                    </a>
-                    <p class="card_desc">
-                        Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.
-                    </p>
-                </div>
-
-                <div class="card_footer_container">
-
-                    <div class="author_container">
-                        <div class="author_avatar_container">
-                            <img 
-                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
-                                loading="lazy"
-                                class="author_avatar"
-                                alt="avatar 1"
-                            />
-                        </div>
-                        <div class="author_info_container">
-                            <span class="author_name">
-                                John Doe
-                            </span>
-                            <span class="author_date">
-                                Sept 19, 2021
-                            </span>
-                        </div>
-                    </div>
-
-                    <div >
-                        <span class="card_tag_container">Technology</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card_container">
-                <a href="#" class="card_image_container">
-                    <img
-                        src="https://source.unsplash.com/random/600×400?productivity"
-                        alt="card 1 image"
-                        class="card_image"
-                        loading="lazy"
-                    />
-                </a>
-
-                <div class="card_title_container">
-                    <a href="#" class="card_title_anchor">
-                        <h2 class="card_title">New Gadgets Released</h2>
-                    </a>
-                    <p class="card_desc">
-                        Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.
-                    </p>
-                </div>
-
-                <div class="card_footer_container">
-
-                    <div class="author_container">
-                        <div class="author_avatar_container">
-                            <img 
-                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
-                                loading="lazy"
-                                class="author_avatar"
-                                alt="avatar 1"
-                            />
-                        </div>
-                        <div class="author_info_container">
-                            <span class="author_name">
-                                John Doe
-                            </span>
-                            <span class="author_date">
-                                Sept 19, 2021
-                            </span>
-                        </div>
-                    </div>
-
-                    <div >
-                        <span class="card_tag_container">Technology</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card_container">
-                <a href="#" class="card_image_container">
-                    <img
-                        src="https://source.unsplash.com/random/600×400?healthy"
-                        alt="card 1 image"
-                        class="card_image"
-                        loading="lazy"
-                    />
-                </a>
-
-                <div class="card_title_container">
-                    <a href="#" class="card_title_anchor">
-                        <h2 class="card_title">New Gadgets Released</h2>
-                    </a>
-                    <p class="card_desc">
-                        Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.
-                    </p>
-                </div>
-
-                <div class="card_footer_container">
-
-                    <div class="author_container">
-                        <div class="author_avatar_container">
-                            <img 
-                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
-                                loading="lazy"
-                                class="author_avatar"
-                                alt="avatar 1"
-                            />
-                        </div>
-                        <div class="author_info_container">
-                            <span class="author_name">
-                                John Doe
-                            </span>
-                            <span class="author_date">
-                                Sept 19, 2021
-                            </span>
-                        </div>
-                    </div>
-
-                    <div >
-                        <span class="card_tag_container">Technology</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card_container">
-                <a href="#" class="card_image_container">
-                    <img
-                        src="https://source.unsplash.com/random/600×400?sustainability"
-                        alt="card 1 image"
-                        class="card_image"
-                        loading="lazy"
-                    />
-                </a>
-
-                <div class="card_title_container">
-                    <a href="#" class="card_title_anchor">
-                        <h2 class="card_title">New Gadgets Released</h2>
-                    </a>
-                    <p class="card_desc">
-                        Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.
-                    </p>
-                </div>
-
-                <div class="card_footer_container">
-
-                    <div class="author_container">
-                        <div class="author_avatar_container">
-                            <img 
-                                src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
-                                loading="lazy"
-                                class="author_avatar"
-                                alt="avatar 1"
-                            />
-                        </div>
-                        <div class="author_info_container">
-                            <span class="author_name">
-                                John Doe
-                            </span>
-                            <span class="author_date">
-                                Sept 19, 2021
-                            </span>
-                        </div>
-                    </div>
-
-                    <div  >
-                        <span class="card_tag_container">Technology</span>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-    </div>
+<body>
     
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <!-- <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+        <div class="item">P</div> -->
+    </div>
+
 </body>
 </html>
-<!-- 
-
-https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64
-https://source.unsplash.com/random/600×400?healthy -->
